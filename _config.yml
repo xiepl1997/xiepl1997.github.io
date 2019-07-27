@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '谢沛良的博客'
-description: ''
-keyword: ''
+description: '很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: '谢沛良，谢沛良的博客，技术，代码'
 url: 'http://xiepl1997.github.io' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -63,7 +63,7 @@ sns:
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 14 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
