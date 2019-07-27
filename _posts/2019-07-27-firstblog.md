@@ -3,8 +3,24 @@ layout: post
 title: '个人博客上线'
 date: 2019-07-27
 author: xiepl1997
+conver: assets/img/bg.jpg
 tags: life
 ---
 
 ### Welcome
 
+最初在csdn写博客，开始写得是挺开心的，中间发生了一点不愉快的事情，结果慢慢对其失去兴趣，后来觉得可以自己搭建一个博客写写东西，再后来变成了想搭建一个个人网站，奈何一直没有时间且技术储备也不足，想法一直没有落实。今年四月份以来在中航发实习，中途做了个毕设。每天工作结束后还有大把空闲时间，于是乎就想着把这个酝酿很久的想法给它落实了，就当成是一个小小的个人项目了。个人网站地址<http://www.xpllyn.com>
+
+### About
+
+原本想用wordpress搭建个人博客，但服务器只买了一年，到期了之后或续费或数据迁移，续费就没有学生价了，迁移又是个麻烦事。于是想可以不用服务器搭建嘛，对呗，用github的免费静态网站服务器github page。
+
+本博客使用github page + jekyll搭建，为什么选择github page？  
+* 搭建简单而且免费
+* 可以绑定自己的域名
+* git + github + markdown + jekyll理想的博客环境
+* 不限流量、不限容量、不用花钱，重点
+
+### 致谢
+
+个人博客模板来源于jekyll官方推荐模板<https://github.com/kaeyleo/jekyll-theme-H2O>
