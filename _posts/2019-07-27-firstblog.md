@@ -3,7 +3,7 @@ layout: post
 title: '个人博客上线'
 date: 2019-07-27
 author: xiepl1997
-conver: assets/img/bg.jpg
+conver: 'assets/img/bg.jpg'
 tags: life
 ---
 
@@ -20,7 +20,3 @@ tags: life
 * 可以绑定自己的域名
 * git + github + markdown + jekyll理想的博客环境
 * 不限流量、不限容量、不用花钱，重点
-
-### 致谢
-
-个人博客模板来源于jekyll官方推荐模板<https://github.com/kaeyleo/jekyll-theme-H2O>
