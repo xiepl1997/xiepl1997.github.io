@@ -7,6 +7,7 @@ tags: spring
 ---
 
 springboot集成了mybatis后，就不需要繁琐的xml配置了，只需要一个Mapper类。  
+
 增删改查对应的注解分别为@Insert、@Delete、@Update、@Select。  
 ```java
 /**
