@@ -13,30 +13,30 @@ tags: spring
 获取客户端真实ip地址的方法如下
 ```java
 /**
-     * @param request
-     * @return 返回用户的IP地址
-     */
-    public String getUserIp(HttpServletRequest request){
-        String ip = request.getHeader("X-Forwarded-For");
+ * @param request
+ * @return 返回用户的IP地址
+ */
+public String getUserIp(HttpServletRequest request){
+    String ip = request.getHeader("X-Forwarded-For");
 
-        if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
-            ip = request.getHeader("Proxy-Client-IP");
-        }
-        if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
-            ip = request.getHeader("WL-Proxy-Client-IP");
-        }
-        if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
-            ip = request.getHeader("HTTP_CLIENT_IP");
-        }
-        if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
-            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
-        }
-        if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
-            ip = request.getRemoteAddr();
-        }
-
-        return ip;
+    if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
+        ip = request.getHeader("Proxy-Client-IP");
     }
+    if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
+        ip = request.getHeader("WL-Proxy-Client-IP");
+    }
+    if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
+        ip = request.getHeader("HTTP_CLIENT_IP");
+    }
+    if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
+        ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+    }
+    if(ip == null || ip.length() == 0 || "unknow".equalsIgnoreCase(ip)){
+        ip = request.getRemoteAddr();
+    }
+
+    return ip;
+}
 ```
 这些请求头的意思：
 * X-Forwarded-For
@@ -46,3 +46,18 @@ tags: spring
 * HTTP_CLIENT_IP
 有些代理服务器会加上此请求头。
 
+***
+（2019-08-24 补）
+测试的时候因为用到自己电脑测试，于是用上诉方法会得到127.0.0.1的本地环回地址，为了获取到本机的ip地址，加上以下代码
+```java
+if(ip.equals("127.0.0.1")){
+    //根据网卡获取ip
+    InetAddress inet = null;
+    try {
+        inet = InetAddress.getLocalHost();
+    }catch (UnknownHostException e){
+        e.printStackTrace();
+    }
+    ip = inet.getHostAddress();
+}
+```
