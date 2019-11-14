@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jdk11源码-Integer.numberOfLeadingZeros(int i)
-data: 2019-11-05
+date: 2019-11-05
 author: xiepl1997
 tags: 源码阅读
 ---
