@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java专业术语五十问(上)
-data: 2019-12-25
+date: 2019-12-25
 author: xiepl1997
 tags: java
 ---
