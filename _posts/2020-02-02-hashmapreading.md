@@ -132,7 +132,7 @@ public HashMap() {
 	this.loadFactor = 0.75F;
 }
 ```
-4. 通过Map构造HashMap时，使用默认装载因子，并调用putMapEntries将Map装入HashMap。
+4. 通过Map构造HashMap时，使用默认装载因子，并调用putMapEntries将Map装入HashMap  
 ```java
 public HashMap(Map<? extends K, ? extends V> m) {
 	this.loadFactor = 0.75F;
@@ -172,6 +172,7 @@ final void putMapEntries(Map<? extends K, ? extends V> m, boolean evict) {
 
 }
 ```
+
 该构造函数，传入一个Map，然后把该Map转为hashMap，resize方法在下面添加元素的时候会详细讲解，在上面entrySet方法会返回一个Set<Map.Entry<K,V>>，泛型为Map的内部类Entry，它是一个存放key-value的实例，也就是Map中的每一个key-value就是一个Entry实例，为什么使用这个方式进行遍历，因为效率高，putVal方法把取出来的每个key-value存入到hashMap中。  
 
 ### 3.2 hash(Object key)
