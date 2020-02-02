@@ -134,43 +134,43 @@ public HashMap() {
 ```
 4. 通过Map构造HashMap时，使用默认装载因子，并调用putMapEntries将Map装入HashMap  
 ```java
-public HashMap(Map<? extends K, ? extends V> m) {
-	this.loadFactor = 0.75F;
-	this.putMapEntries(m, false);
-}
+	public HashMap(Map<? extends K, ? extends V> m) {
+		this.loadFactor = 0.75F;
+		this.putMapEntries(m, false);
+	}
 
-final void putMapEntries(Map<? extends K, ? extends V> m, boolean evict) {
-	//获取该map实际长度
-    int s = m.size();
-    if (s > 0) {
-    	//判断table是否初始化，如果没有初始化
-        if (this.table == null) {
-        	/**求出需要的容量，因为实际使用的长度=容量*0.75得来的，+1是因为小数相除，基本都不会是整数，容量大小
-			不能为小数的，后面转化为int，多余的小数就要被丢掉，所以+1，例如，map实际长度为29.3，则所需要的容量为30.
-        	*/
-            float ft = (float)s / this.loadFactor + 1.0F;
-            //判断该容量大小是否超出上限
-            int t = ft < 1.07374182E9F ? (int)ft : 1073741824;
-            //对临界值进行初始化，tableSizeFor(t)这个方法会返回大于t值的，且离其最近的2次幂，例如t为29，则返回的值是32
-            if (t > this.threshold) {
-                this.threshold = tableSizeFor(t);
-            }
-        } else if (s > this.threshold) {  //如果table已经初始化，则进行扩容操作，resize就是扩容
-            this.resize();
-        }
+	final void putMapEntries(Map<? extends K, ? extends V> m, boolean evict) {
+		//获取该map实际长度
+	    int s = m.size();
+	    if (s > 0) {
+	    	//判断table是否初始化，如果没有初始化
+	        if (this.table == null) {
+	        	/**求出需要的容量，因为实际使用的长度=容量*0.75得来的，+1是因为小数相除，基本都不会是整数，容量大小
+				不能为小数的，后面转化为int，多余的小数就要被丢掉，所以+1，例如，map实际长度为29.3，则所需要的容量为30.
+	        	*/
+	            float ft = (float)s / this.loadFactor + 1.0F;
+	            //判断该容量大小是否超出上限
+	            int t = ft < 1.07374182E9F ? (int)ft : 1073741824;
+	            //对临界值进行初始化，tableSizeFor(t)这个方法会返回大于t值的，且离其最近的2次幂，例如t为29，则返回的值是32
+	            if (t > this.threshold) {
+	                this.threshold = tableSizeFor(t);
+	            }
+	        } else if (s > this.threshold) {  //如果table已经初始化，则进行扩容操作，resize就是扩容
+	            this.resize();
+	        }
 
-        Iterator var8 = m.entrySet().iterator();
+	        Iterator var8 = m.entrySet().iterator();
 
-        //遍历，把map中的数据转移到hashmap中
-        while(var8.hasNext()) {
-            Entry<? extends K, ? extends V> e = (Entry)var8.next();
-            K key = e.getKey();
-            V value = e.getValue();
-            this.putVal(hash(key), key, value, false, evict);
-        }
-    }
+	        //遍历，把map中的数据转移到hashmap中
+	        while(var8.hasNext()) {
+	            Entry<? extends K, ? extends V> e = (Entry)var8.next();
+	            K key = e.getKey();
+	            V value = e.getValue();
+	            this.putVal(hash(key), key, value, false, evict);
+	        }
+	    }
 
-}
+	}
 ```
 
 该构造函数，传入一个Map，然后把该Map转为hashMap，resize方法在下面添加元素的时候会详细讲解，在上面entrySet方法会返回一个Set<Map.Entry<K,V>>，泛型为Map的内部类Entry，它是一个存放key-value的实例，也就是Map中的每一个key-value就是一个Entry实例，为什么使用这个方式进行遍历，因为效率高，putVal方法把取出来的每个key-value存入到hashMap中。  
