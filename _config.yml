@@ -37,8 +37,8 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  disqus: true
+  disqus_url: 'https://https-xiepl1997-github-io.disqus.com/'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
