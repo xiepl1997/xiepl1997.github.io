@@ -8,7 +8,7 @@ tags : springboot
 
 最近有个需求是上传文件到服务器，使用到的框架是springboot，查询资料后记录如下。  
 
-#### 1.添加基本依赖
+### 1.添加基本依赖
 这是第一步，但一般建立springboot项目的时候能够勾选该启动依赖。
 ```java
 <dependency>
@@ -17,7 +17,7 @@ tags : springboot
 </dependency>
 ```
 
-#### 前端form
+### 2.前端form
 这是我项目中提交文件的前端代码，这个就因人而异了。（使用的thymeleaf）
 ```java
 <div class="card">
@@ -47,7 +47,7 @@ tags : springboot
 </form>
 ```
 
-#### controller代码
+### 3.controller代码
 前端提交请求传到控制层，控制层代码如下。
 ```java
 @Autowired
