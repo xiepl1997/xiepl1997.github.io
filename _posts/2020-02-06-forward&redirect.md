@@ -12,7 +12,7 @@ tags: java
 
 形式：`request.getRequestDispatcher().forward(request,response)`  
 在springboot中的controller进行试图解析时默认转发。  
-转发在服务器端发挥作用，通过forward()方法提交信息在多个页面之间进行传递。
+转发在服务器端发挥作用，通过forward()方法提交信息在多个页面之间进行传递。可以理解为服务器跳转，相当于方法调用，在执行当前文件的过程中转向执行目标文件，两个文件（当前文件和目标文件）属于同一次请求，前后页共用一个request，可以通过此来传递一些数据或者session信息。
 * 地址栏不会变
 * 转发只能转发到当前web应用内的资源
 * 在转发过程中，可以将数据保存到request域对象中去
@@ -47,6 +47,7 @@ springboot中进行重定向时，controller中写
 	}
 ```
 如果controller中直接写`mv.setViewName("redirect:StudentPage")`的话，将会出现404（若StudentPage.html存放在templates文件夹中）。这是因为templates不是springboot项目的静态资源地址，重定向是二次请求，所以无法访问templates中资源。  
+重定向也是客户端跳转，相当于客户端向服务器发送请求后，服务器返回一个响应，客户端接收到响应之后又向服务器端发送一次请求，一共是2次请求，前后页不共用一个request，**不能读取转向前通过request.setAttribute()设置的属性值**。
 * 重定向地址栏会改变
 * 重定向可以跳转到当前web应用，甚至是外部域名网站
 * 不能在重定向过程中，将数据保存到request域对象中
