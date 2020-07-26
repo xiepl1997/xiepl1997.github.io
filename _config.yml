@@ -39,7 +39,7 @@ nightMode: true
 comments:
   disqus: false
   disqus_url: 'https://https-xiepl1997-github-io.disqus.com/'
-  gitalk: true
+  gitalk: false
   gitalk_clientID: '393777513f3798b953b3'
   gitalK_Secret: '4a23fc3ccbcbab20a5d0959347df5479e21fd622'
   gitalk_repo: 'xiepl1997.github.io'
