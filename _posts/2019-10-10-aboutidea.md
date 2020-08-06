@@ -3,7 +3,7 @@ layout: post
 title: idea导入springboot项目使用maven引入依赖失败，包名现红色波浪线
 date: 2019-10-06
 author: xiepl1997
-tags: spring
+tags: springboot
 ---
 
 换个了电脑之后，安装好配置好各种环境。  

@@ -3,7 +3,7 @@ layout: post
 title: 验证二叉搜索树
 date: 2020-03-05
 author: xiepl1997
-tags: 刷题
+tags: 敲敲敲
 ---
 
 给定一个二叉树，判断其是否是二叉搜索树。  

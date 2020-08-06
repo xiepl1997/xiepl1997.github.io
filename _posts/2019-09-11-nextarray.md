@@ -4,7 +4,7 @@ title: 下一个排列
 date: 2019-09-11
 author: xiepl1997
 cover: 'assets/img/20190911.png'
-tags: 刷题
+tags: 敲敲敲
 ---
 
 ### 题目描述
