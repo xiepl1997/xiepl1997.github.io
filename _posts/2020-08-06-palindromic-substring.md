@@ -2,7 +2,7 @@
 layout: post
 title: 回文子串的数量（manacher）
 date: 2020-08-06
-auther: xiepl1997
+author: xiepl1997
 tags: 敲敲敲
 ---
 
