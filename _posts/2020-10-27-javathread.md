@@ -70,7 +70,8 @@ public class Task implements Runnable {
 * 创建一个FutureTask对象，传入Callable类型的参数。
 * 调用Thread类重载参数为Runnable的构造器创建Thread对象，将FutureTask作为参数传入。
 线程允许完后获取返回值：
-* 使用FutureTask的get()方法。
+* 使用FutureTask的get()方法。  
+
 ```java
 public class Test {
 	public static void main(String[] args) {
