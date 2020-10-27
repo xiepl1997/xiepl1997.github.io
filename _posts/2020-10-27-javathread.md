@@ -14,7 +14,7 @@ Java使用线程大致有以下四种方法：
 * 实现Callable接口，重写call方法（有返回值）
 * 使用线程池（有返回值）
 
-## 继承Thread类，重写run方法
+## 1.继承Thread类，重写run方法
 每次创建一个新的线程，都需要新建一个Thread子类的对象。  
 一个线程调用两次start()方法将会抛出线程状态异常。  
 **继承Thread类的方式是多个线程各自完成各自的任务。**  
@@ -38,7 +38,7 @@ public class MyThread extends Thread {
 }
 ```
 
-## 实现Runnable接口，重写run()方法
+## 2.实现Runnable接口，重写run()方法
 覆写Runnable接口实现多线程，可以避免单继承局限。不论创建多少个线程，只需要创建一个Runnable接口实现类的对象。  
 创建线程实际调用的Thread类Runnable类型参数的构造器。  
 **实现Runnable接口的方法是多个线程共同完成一个任务。**
@@ -62,7 +62,7 @@ public class Task implements Runnable {
 }
 ```
 
-## 实现Callable接口，重写call()方法
+## 3.实现Callable接口，重写call()方法
 自定义类实现Callable接口时，必须指定泛型，该泛型即返回值的类型。  
 每次创建一个新的线程，都需要创建一个新的Callable接口的实现类。  
 启动线程的过程：
@@ -103,7 +103,7 @@ public class Task implements Callable<Integer> {
 ```
 FutureTask的get()方法在调用的时候会阻塞，直到当前的线程完成运行后将结果返回。
 
-## 使用线程池
+## 4.使用线程池
 在java.util.concurrent包下，提供了一系列与线程池有关的类。合理使用线程池，可以带来诸多好处：
 * **降低资源消耗**，通过重复利用已创建的线程来降低线程创建和销毁造成的消耗。
 * **提高响应速度**，当任务到达时，任务可以不必等到新线程创建就能立即运行。
