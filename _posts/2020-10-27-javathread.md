@@ -41,7 +41,7 @@ public class MyThread extends Thread {
 ## 2.实现Runnable接口，重写run()方法
 覆写Runnable接口实现多线程，可以避免单继承局限。不论创建多少个线程，只需要创建一个Runnable接口实现类的对象。  
 创建线程实际调用的Thread类Runnable类型参数的构造器。  
-**实现Runnable接口的方法是多个线程共同完成一个任务。**
+**实现Runnable接口的方法可以多个线程共同完成一个任务。**
 ```java
 public class Test {
 	public static void main(String[] args) {
@@ -149,3 +149,24 @@ public class Task implements Callable<Integer> {
 	}
 }
 ```
+
+## 5.对比
+可以将java中的线程创建方式分为两大类：一类是继承Thread类实现多线程；另一类是通过实现Runnable或者Callable接口实现多线程。  
+下面来分析一下这两类实现多线程方式的优劣：  
+
+### 通过继承Thread实现多线程
+* 优点  
+1.实现简单，而且要获取当前线程，无需调用Thread.currentThread()方法，直接使用this即可获取当前线程。  
+* 缺点  
+1.线程已经继承了Thread类了，就不能继承其他类。  
+2.多个线程不能共享同一份资源。  
+
+### 通过实现Runnable或Callable接口实现多线程
+* 优点  
+1.线程类只是实现了接口，还可以继承其他类。  
+2.多个线程可以使用同一个target对象，适合多个线程处理同一个任务的情况。  
+* 缺点  
+1.较第一类方法，编程较为复杂。  
+2.要访问当前线程，必须使用Thread.currentThread()方法。
+
+### 综上 ：使用第二类方法较多！
