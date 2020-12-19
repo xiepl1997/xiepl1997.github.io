@@ -42,7 +42,8 @@ double findMedian() - 返回目前所有元素的中位数。
 * 如果数据总数为奇数，则取小根堆堆顶。
 * 如果数据总数为偶数，则取（大根堆堆顶 + 小根堆堆顶）/ 2
 
-> code
+> code  
+
 ```java
 class MedianFinder {
     // 使用大根堆和小根堆
