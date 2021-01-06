@@ -50,14 +50,14 @@ init_connect='SET NAMES utf8mb4'
 
 ### 4.重启数据库，检查变量
 登录mysql后输入：```SHOW VARIABLES WHERE Variable_name LIKE 'character_set_%' OR Variable_name LIKE 'collation%';```  
-确保一下几个变量：
+确保一下几个变量：  
 | 系统变量 | 描述 |
 | :------ | :---- |
 | character_set_client | 客户端来源数据使用的字符集 |
 | character_set_connection | 连接层字符集 |
 | character_set_database | 当前选中数据库的默认字符集 |
 | character_set_results | 查询结果字符集 |
-| character_set_server | 默认的内部操作字符集 |
+| character_set_server | 默认的内部操作字符集 |  
 这几个变量必须是utf8mb4.  
 
 同时，数据库和建好的表也转化为utf8mb4.
