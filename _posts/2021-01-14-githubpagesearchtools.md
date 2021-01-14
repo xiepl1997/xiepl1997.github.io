@@ -6,7 +6,7 @@ author: xiepl1997
 tags: springboot 工具
 ---
 
-[GitHub Page Search地址](www.xpllyn.com/GitHubPageSearch/)
+[GitHub Page Search地址](http://www.xpllyn.com/GitHubPageSearch/)
 
 ## GitHub Page是什么
 当你想搭建一个自己的网站，但却没有服务器，没有数据库等，这时候不用一筹莫展，**GitHub Page**可以助你一臂之力。  
