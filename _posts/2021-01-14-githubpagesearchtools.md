@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 造了个工具：<font color="ff0000">GitHub Page搜索工具</font>
+title: 造了个工具：GitHub Page搜索工具
 date: 2021-01-14
 author: xiepl1997
 tags: springboot 工具

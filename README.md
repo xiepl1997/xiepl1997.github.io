@@ -34,3 +34,4 @@
 * [后端架构的演进](https://xiepl1997.github.io/2020/12/15/distribute-system-history.html)
 * [剑指offer.41 数据流中的中位数](https://xiepl1997.github.io/2020/12/19/leetcode-point-to-offer-41.html)
 * [MySql存储emoji表情报错的处理方法](https://xiepl1997.github.io/2021/01/06/mysqlSaveEmoji.html)
+* [造了个工具：GitHub Page搜索工具](https://xiepl1997.github.io/2021/01/14/githubpagesearchtools.html)
