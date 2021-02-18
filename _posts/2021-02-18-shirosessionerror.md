@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 解决Shiro第一次重定向url带有jsessionid导致400错误
-date: 2021-02-018
+date: 2021-02-18
 author: xiepl1997
 tags: java springboot
 ---
