@@ -37,3 +37,4 @@
 * [造了个工具：GitHub Page搜索工具](https://xiepl1997.github.io/2021/01/14/githubpagesearchtools.html)
 * [解决Shiro第一次重定向url带有jsessionid导致400错误](https://xiepl1997.github.io/2021/02/18/shirosessionerror.html)
 * [个人网站新功能：聊天室](https://xiepl1997.github.io/2021/02/20/newchatroom.html)
+* [如何保证缓存和数据库的一致性](https://xiepl1997.github.io/2021/03/07/keepconsistence.html)
