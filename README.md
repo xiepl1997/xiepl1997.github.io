@@ -38,3 +38,4 @@
 * [解决Shiro第一次重定向url带有jsessionid导致400错误](https://xiepl1997.github.io/2021/02/18/shirosessionerror.html)
 * [个人网站新功能：聊天室](https://xiepl1997.github.io/2021/02/20/newchatroom.html)
 * [如何保证缓存和数据库的一致性](https://xiepl1997.github.io/2021/03/07/keepconsistence.html)
+* [为什么jvm的新生代要分为一个Eden和两个Survivor](https://xiepl1997.github.io/2021/03/12/whyedenandtwosurvivor.html)
