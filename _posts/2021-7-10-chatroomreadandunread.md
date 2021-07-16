@@ -48,4 +48,4 @@ A和B聊天，如果A发送一条消息给B，怎么知道B已读呢？当然是
 这个思路是没什么复杂的，但是实施起来就有很多小细节了。在一个坑上面花了很多时间。就是js获取的时间戳，在java中转成Timestamp的时候出错，导致我在调试的时候一旦发送已读回执，接收已读回执的那个客户端就会断连。最后发现是Timestemp这个东东，不能用强转字符串来得到，大意了，需要通过Timestamp.valueOf(×××)来把一个字符串转为时间戳，而且这个传入的字符串需要以yyyy-MM-dd HH:mm:ss的格式来的。当时写太快了，就用(Timestamp)强制转换。。。  
 
 截图：  
-![image](https://images.cnblogs.com/cnblogs_com/xiepl1997/1916186/o_210710063048newChatRoom.PNG)
+![image](https://github.com/xiepl1997/xpllyn/blob/master/screenshot/newChatRoom.PNG)
