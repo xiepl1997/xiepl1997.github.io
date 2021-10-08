@@ -1,9 +1,9 @@
 ---
 layout: post
-title: spring boot中集成mybatis通过注解方式增删改查
+title: 【小记】spring boot中集成mybatis通过注解方式增删改查
 date: 2019-08-21
 author: xiepl1997
-tags: springboot
+tags: springboot 小记
 ---
 
 springboot集成了mybatis后，就不需要繁琐的xml配置了，只需要一个Mapper类。  

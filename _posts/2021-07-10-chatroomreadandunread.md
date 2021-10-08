@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Web聊天室消息[已读未读]的实现
+title: 【实践】Web聊天室消息[已读未读]的实现
 date: 2021-07-10
 author: xiepl1997
-tags: java springboot 敲敲敲
+tags: java springboot 实践
 ---
 
 [聊天室快速访问](http://www.xpllyn.com/chatroom)  

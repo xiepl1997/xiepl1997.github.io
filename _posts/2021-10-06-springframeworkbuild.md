@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Spring源码环境搭建踩坑记录
+title: 【踩错】Spring源码环境搭建踩坑记录
 date: 2021-10-06
 author: xiepl1997
-tags: java spring 源码阅读
+tags: java spring 源码 踩错
 ---
 
 之前调试Spring源码为了图省事，都是直接利用idea搭建一个Spring项目然后断点调试。这样的好处是快，坏处是对于Spring的整个代码架构没办法像自己的项目代码那样每个包、每个模块一目了然，并且是只读的，没有办法做一些修改与注释。搭建Spring源码阅读环境势在必行。  

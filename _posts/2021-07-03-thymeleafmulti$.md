@@ -1,9 +1,9 @@
 ---
 layout: post
-title: thymeleaf多重${}
+title: 【踩错】thymeleaf多重${}
 date: 2021-07-03
 author: xiepl1997
-tags: java springboot
+tags: java springboot 踩错
 ---
 
 今天遇到一个问题，thymeleaf接收到controller传递过来的model数据中，含有list和map结构的数据，在thymeleaf渲染数据的过程中，首先用th:each遍历list，取list中的元素作为map的键，然后从map中取出对应的value来。  

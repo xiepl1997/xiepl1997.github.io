@@ -1,9 +1,9 @@
 ---
 layout : post
-title : 关于thymeleaf的select下拉选择框的默认选中项
+title : 【实践】关于thymeleaf的select下拉选择框的默认选中项
 date : 2020-05-29
 author : xiepl1997
-tags : thymeleaf springboot
+tags : thymeleaf springboot 小记 实践
 ---
 
 最近在敲敲敲的过程遇到一个问题，这个问题是这样的：我需要在页面上提供用户更新信息的功能，在进入该页面前，首先获取信息，使用thymeleaf模板填充信息。前端有一个select标签，需求是显示用户之前所选中的内容。  

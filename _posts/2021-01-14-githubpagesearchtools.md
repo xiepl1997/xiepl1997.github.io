@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 造了个工具：GitHub Page搜索工具
+title: 【实践】造了个工具：GitHub Page搜索工具
 date: 2021-01-14
 author: xiepl1997
-tags: springboot 工具
+tags: springboot 实践
 ---
 
 [GitHub Page Search地址](http://www.xpllyn.com/GitHubPageSearch)

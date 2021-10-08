@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Comparator为何是函数式接口？
+title: 【小记】Comparator为何是函数式接口？
 date: 2020-12-01
 author: xiepl1997
-tags: java
+tags: java 小记
 ---
 
 ## Functional Interface

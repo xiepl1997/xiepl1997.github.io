@@ -1,9 +1,9 @@
 ---
 layout: post
-title: logback日志框架的配置和使用
+title: 【小记】logback日志框架的配置和使用
 date: 2021-07-01
 author: xiepl1997
-tags: java springboot
+tags: java springboot 小记
 ---
 
 日志在项目中必不可少，目前流行的日志框架有log4j、log4j2、logback，其中logback和log4j作者是同一个人。logback是SpringBoot默认集成的日志框架，效率高，能适应诸多的运行环境，是SLF4J门面框架的一种实现。  

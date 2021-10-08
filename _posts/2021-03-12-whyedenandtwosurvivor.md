@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 为什么jvm的新生代要分为一个Eden和两个Survivor
+title: 【小记】为什么jvm的新生代要分为一个Eden和两个Survivor
 date: 2021-03-12
 author: xiepl1997
-tags: java
+tags: java 小记
 ---
 
 现在的JVM的新生代内存中，除了Eden区，还有两个Survivor区。那为什么要这样设置呢？  

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 从公钥私钥理解HTTPS
+title: 【小记】从公钥私钥理解HTTPS
 date: 2021-09-07
 author: xiepl1997
-tags: 网络
+tags: 网络 小记
 ---
 
 我们在平时在使用浏览器浏览网页时，通常会看到网址前面写的是https，这表明当前网站通过https协议来进行数据的传输。那么https和http有什么不同的呢？  

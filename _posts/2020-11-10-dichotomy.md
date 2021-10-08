@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 一种通用的二分法写法
+title: 【算法】一种通用的二分法写法
 date: 2020-11-10
 author: xiepl1997
-tags: java 敲敲敲
+tags: java 算法
 ---
 
 二分法思路很简单，细节是魔鬼。  

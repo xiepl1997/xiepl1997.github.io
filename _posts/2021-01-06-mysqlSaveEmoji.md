@@ -1,9 +1,9 @@
 ---
 layout: post
-title: MySql存储emoji表情报错的处理方法
+title: 【踩错】MySql存储emoji表情报错的处理方法
 date: 2021-01-06
 author: xiepl1997
-tags: 随笔 java springboot
+tags: 踩错 java springboot
 ---
 
 mysql存储emoji表情报错的处理方法：更改编码为utf8mb4  

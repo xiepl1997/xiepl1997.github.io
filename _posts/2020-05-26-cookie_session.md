@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 有关cookie和session是什么
+title: 【小记】有关cookie和session是什么
 date: 2020-05-26
 author: xiepl1997
-tags: springboot 随笔
+tags: springboot 小记
 ---
 
 cookie？ 饼干？ 是的呀，这玩意儿能让人舒服~  

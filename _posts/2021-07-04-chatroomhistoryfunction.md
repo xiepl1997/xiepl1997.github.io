@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Web聊天室历史记录解决方案（轻喷。。）
+title: 【实践】Web聊天室历史记录解决方案（轻喷。。）
 date: 2021-06-25
 author: xiepl1997
-tags: java springboot 敲敲敲
+tags: java springboot 实践
 ---
 
 [聊天室快速访问](http://www.xpllyn.com/chatroom)  

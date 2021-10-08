@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 个人网站新功能：聊天室
+title: 【实践】个人网站新功能：聊天室
 date: 2021-02-20
 author: xiepl1997
-tags: 敲敲敲 springboot java
+tags: 实践 springboot java
 ---
 
 之前在个人网站上预留了一个网页聊天室的功能，在这次寒假抽出了时间来完成。[快速访问](http://www.xpllyn.com/chatroom)  

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 下一个排列
+title: 【算法】下一个排列
 date: 2019-09-11
 author: xiepl1997
 cover: 'assets/img/20190911.png'
-tags: 敲敲敲
+tags: 算法
 ---
 
 ### 题目描述

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Java多线程的创建
+title: 【小记】Java多线程的创建
 date: 2020-10-27
 author: xiepl1997
-tags: java
+tags: java 小记
 ---
 
 做实验的过程中需要用到多线程，许久不用有点儿生疏了，现在查资料做个多线程创建的方法记录。  

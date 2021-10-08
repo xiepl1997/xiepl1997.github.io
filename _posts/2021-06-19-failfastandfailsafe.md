@@ -1,9 +1,9 @@
 ---
 layout: post
-title: fail-fast和fail-safe
+title: 【小记】fail-fast和fail-safe
 date: 2021-06-19
 author: xiepl1997
-tags: java
+tags: java 小记
 ---
 
 以前也遇到过在遍历集合的过程中对集合元素进行删除的时候会报出错误的情况，之前一直没弄明白是怎么回事，这次也花了一点时间看了一下相关内容，在此做一个总结。

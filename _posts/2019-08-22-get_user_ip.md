@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 获取客户端用户真实ip方法整理
+title: 【小记】获取客户端用户真实ip方法整理
 date: 2019-08-22
 author: xiepl1997
-tags: springboot
+tags: springboot 小记
 ---
 
 由请求获取客户端ip地址的方法是request.getRemoteAddr()，在大部分的情况下该方法是有效的，但是在通过了apache、squid等反向代理软件就不能获取到客户端的真实ip了。  

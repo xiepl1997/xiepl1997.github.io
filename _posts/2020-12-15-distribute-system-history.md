@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 后端架构的演进
+title: 【小记】后端架构的演进
 date: 2020-12-15
 author: xiepl1997
-tags: java springboot 微服务
+tags: java springboot 小记
 ---
 
 当前微服务架构大行其道，很多java工程师也对微服务架构的学习和使用趋之若鹜。但是对于技术人来说，比了解技术更重要的是了解技术产生的背景及核心原理。  

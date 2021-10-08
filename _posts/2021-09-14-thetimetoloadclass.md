@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 探析Java类加载时机
+title: 【小记】探析Java类加载时机
 date: 2021-09-14
 author: xiepl1997
-tags: java jvm
+tags: java jvm 小记
 ---
 
 最近在重温《深入理解Java虚拟机》这本书，对于第七章的类加载机制部分了解到了之前没有注意的细节，特在此总结记录下来。  

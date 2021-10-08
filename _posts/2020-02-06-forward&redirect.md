@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 转发与重定向的区别
+title: 【小记】转发与重定向的区别
 date: 2020-02-06
 author: xiepl1997
-tags: java
+tags: java 小记
 ---
 
 一直没有搞懂转发和重定向的概念，更别提区别了。今天在上面栽跟头，特查资料总结如下。

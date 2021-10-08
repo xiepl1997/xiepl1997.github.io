@@ -1,9 +1,9 @@
 ---
 layout : post
-title : springboot中的重定向数据传递
+title : 【实践】springboot中的重定向数据传递
 date : 2020-06-17
 author : xiepl1997
-tags : springboot
+tags : springboot 小记 实践
 ---
 
 在写springboot项目的时候，有时候会有重定向的需求，例如登录界面登录后，就应该使用**重定向**来进行页面的跳转。  

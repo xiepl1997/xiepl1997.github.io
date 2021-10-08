@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 解决ajax异步更新后控件的click事件失效的方法
+title: 【踩错】解决ajax异步更新后控件的click事件失效的方法
 date: 2019-11-14
 author: xiepl1997
-tags: 随笔
+tags: 小记 实践 踩错
 ---
 
 昨天做了一个在线投票网站，是为研究生院“良师益友”活动准备的。  

@@ -1,9 +1,9 @@
 ---
 layout : post
-title : springboot上传文件
+title : 【实践】springboot上传文件
 date : 2020-05-31
 author : xiepl1997
-tags : springboot
+tags : springboot 小记 实践
 ---
 
 最近有个需求是上传文件到服务器，使用到的框架是springboot，查询资料后记录如下。  

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 解决Shiro第一次重定向url带有jsessionid导致400错误
+title: 【踩错】解决Shiro第一次重定向url带有jsessionid导致400错误
 date: 2021-02-18
 author: xiepl1997
-tags: java springboot
+tags: java springboot 踩错
 ---
 
 在Shiro进行第一次重定向时，会在url后携带jsessionid，这会导致400错误（无法找到该网页）。  
